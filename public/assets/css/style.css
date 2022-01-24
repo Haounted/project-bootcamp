@@ -1,0 +1,213 @@
+.box {
+    height: 100vh;
+}
+
+.background-login {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* dashboard */
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.hover-text:hover {
+    color:#39FF14 !important;
+}
+
+.hover-text-logout:hover{
+    color: #ff0099 !important;
+}
+
+.header {
+    height: 100vh;
+    background-color: #14c4c4;
+}
+.body {
+    height: auto;
+    /* background-color: red; */
+}
+
+.profile {
+    height: 17vw;
+}
+.header-text {
+    font-size: 3rem;
+}
+
+.contact {
+    height: 50vh;
+}
+
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-3::after {
+  content: '';
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 90;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.hover-3-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.hover-3-description {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.hover-3 img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hover-3:hover img {
+  width: 100%;
+}
+
+.hover-3:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.delete:hover {
+  color: rgb(255, 38, 0) !important;
+}
+.edit:hover {
+  color: rgb(0, 140, 255) !important;
+}
+
+/* add content/photo */
+.add .navbar {
+    height: 6vh;
+}
+
+/* content */
+.mt-6 {
+    margin-top: 9vh;
+}
+
+.card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.add {
+  position: relative;
+  min-height: 100vh;
+}
+
+.add .body {
+  padding-bottom: 12rem;
+}
+
+.add footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content .body {
+  padding-bottom: 15rem;
+}
+
+.content footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+}
