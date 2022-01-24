@@ -15,21 +15,12 @@
 </head>
 <body class="content">
     <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand text-white fw-bold hover-text" href="{{route('home')}}">My Portfolio</a>
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand text-white fw-bold hover-text" href="{{route('dashboard.index')}}">My Portfolio</a>
             <button class="navbar-toggler text-uppercase fw-bold bg-dark text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav d-flex justify-content-end fw-bold">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 text-white hover-text-logout" href="{{ route('logout') }}"
-                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
-                </ul>
-            </div>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
         </div>
     </nav>
     <div class="body mt-6 container">

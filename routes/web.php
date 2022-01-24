@@ -2,15 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', 'Auth\LoginController@showLoginForm');
 Route::post('/','Auth\LoginController@login');
-
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/login', function () {
-    return view('login');
-});
 
 // add content
 Route::resource('/dashboard','ContentController');
@@ -29,6 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['middleware' => ['auth','revalidate']], function (){
-    Route::get('/home', 'HomeController@index');
-});
+// Route::group(['middleware' => 'revalidate'], function (){
+//     Route::get('/', 'Auth\LoginController@showLoginForm');
+//     Route::post('/','Auth\LoginController@login');
+// });

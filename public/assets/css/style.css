@@ -142,7 +142,7 @@
 }
 
 /* add content/photo */
-.add .navbar {
+.add .navbar, .content .navbar {
     height: 6vh;
 }
 
@@ -179,7 +179,7 @@
   opacity: 1;
 }
 
-.add {
+.add, .content {
   position: relative;
   min-height: 100vh;
 }
@@ -188,26 +188,13 @@
   padding-bottom: 12rem;
 }
 
-.add footer {
+.add footer, .content footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 10rem;
-}
-
-.content {
-  position: relative;
-  min-height: 100vh;
 }
 
 .content .body {
   padding-bottom: 15rem;
-}
-
-.content footer {
-  
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 10rem;
 }
