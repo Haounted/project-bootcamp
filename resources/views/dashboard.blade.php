@@ -76,6 +76,9 @@
                 </div>
               @endforeach
             </div>
+            <div class="d-flex justify-content-center mt-5">
+              {!! $contents->links() !!}
+            </div>
         </div>
     </div>
     <div class="contact mt-5" id="contact">

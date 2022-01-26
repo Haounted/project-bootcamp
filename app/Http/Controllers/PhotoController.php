@@ -17,7 +17,8 @@ class PhotoController extends Controller
     {
         // dd($id);
         $content = Content::where('id',$id)->first();   // ini buat passing lagi di konten mana
-        $photos = Photo::where('content_id',$id)->get();
+        $photos = Photo::paginate(12);
+        // $photos = Photo::where('content_id',$id)->get();
         return view('content',['content'=>$content], ['photos'=>$photos]);
     }
 

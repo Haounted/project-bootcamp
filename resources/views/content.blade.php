@@ -56,6 +56,9 @@
                 </div>
             @endforeach
         </div>
+        <div class="d-flex justify-content-center mt-5">
+          {!! $photos->links() !!}
+        </div>
     </div>
     <footer class="bg-dark text-center text-white mt-5">
         <div class="container p-4 pb-0">

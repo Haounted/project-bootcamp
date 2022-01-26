@@ -19,7 +19,8 @@ class ContentController extends Controller
     {
         $dashboards = User::all();
         $gender = User::where('id','=',Auth::user()->id)->first();
-        $contents = Content::where('user_id',auth()->user()->id)->get();
+        $contents = Content::paginate(12);
+        // $contents = Content::where('user_id',auth()->user()->id)->get();
         return view('dashboard',compact('dashboards','contents','gender'));
     }
 
